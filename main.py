@@ -13,8 +13,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 logger = logging.getLogger(__name__)
 logging.getLogger("aiogram").setLevel(logging.WARNING)
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-ADMIN_IDS_STR = os.environ.get("ADMIN_IDS", "")
+BOT_TOKEN = os.environ.get("8067087245:AAF1fIVHWvn2Ar9lQw96wOansFfuqlmm6s0")
+ADMIN_IDS_STR = os.environ.get("2009403659,910666557")
 if not BOT_TOKEN: raise ValueError("❌ Не установлен BOT_TOKEN")
 if not ADMIN_IDS_STR: raise ValueError("❌ Не установлены ADMIN_IDS")
 try:
