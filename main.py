@@ -15,8 +15,8 @@ logging.getLogger("aiogram").setLevel(logging.WARNING)
 
 BOT_TOKEN = os.environ.get("8067087245:AAF1fIVHWvn2Ar9lQw96wOansFfuqlmm6s0")
 ADMIN_IDS_STR = os.environ.get("2009403659,910666557")
-if not BOT_TOKEN: raise ValueError("8067087245:AAF1fIVHWvn2Ar9lQw96wOansFfuqlmm6s0")
-if not ADMIN_IDS_STR: raise ValueError("2009403659,910666557")
+if not BOT_TOKEN: raise ValueError("❌ Не установлен BOT_TOKEN. Добавьте переменную окружения BOT_TOKEN в Bothost.ru")
+if not ADMIN_IDS_STR: raise ValueError("❌ Не установлены ADMIN_IDS. Добавьте переменную окружения ADMIN_IDS в Bothost.ru")
 try:
     ADMIN_IDS = [int(x.strip()) for x in ADMIN_IDS_STR.split(",") if x.strip().isdigit()]
     if not ADMIN_IDS: raise ValueError("Список пуст")
